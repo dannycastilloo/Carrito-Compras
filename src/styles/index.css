@@ -1,0 +1,150 @@
+/* Tipografía */
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2%;
+}
+
+/* Navbar */
+.nav-item {
+  margin: 0 10px;
+}
+
+.shopping {
+  color: rgb(64, 64, 64);
+}
+
+.profile {
+  background-color: #45a049;
+  border: 0;
+  line-height: normal;
+  overflow: visible;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.profile-button {
+  width: 25px;
+}
+
+.user-login {
+  color: white;
+  margin-left: 10px;
+}
+
+/* Tarjetas */
+.tarjetas-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+  width: calc(32% - 40px);
+  max-height: calc(32% - 40px);
+}
+
+@media screen and (768px <= width <= 1024px) {
+  .tarjeta {
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(50% - 40px);
+    max-height: calc(50% - 40px);
+  }
+}
+
+@media screen and (390px <= width <= 767px) {
+  .tarjeta {
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(100% - 40px);
+    max-height: calc(100% - 40px);
+  }
+}
+
+.tarjeta-imagen {
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.tarjeta-titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-precio {
+  margin: 0;
+  font-weight: bold;
+  right: 10px;
+}
+
+.boton-agregar {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-agregar:hover {
+  background-color: #45a049;
+}
+
+.boton-quitar {
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-quitar:hover {
+  background-color: #a04545;
+}
+
+/* Lista de compras */
+.lista-compra {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item-compra {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-compra p {
+  flex: 1;
+  margin: 0;
+}
+
+.item-compra input {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.item-compra button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-compra button:hover {
+  background-color: #ff1744;
+}
